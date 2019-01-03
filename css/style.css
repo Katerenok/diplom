@@ -2,74 +2,182 @@ body {
 	margin: 0;
 }
 
-@media (max-width: 640px){
-	.container {
-		display: flex;
-		flex-direction: column;
-	}
+.container {
+	display: flex;
+	flex-direction: column;
+}
 
-	.header_overlay:before {
-		content: "";
-		width: 100%;
-    	height: 100%;
+.header_overlay:before {
+	content: "";
+	width: 100%;
+   	height: 100%;
     	
-   		position: absolute;
-   		top: 0;
-    	left: 0;
+	position: absolute;
+   	top: 0;
+   	left: 0;
 
-		background-color: #090c35;
-		opacity: 0.9;
-	}
+	background-color: #090c35;
+	opacity: 0.9;
+}
 
+.bkg_header {
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-color: #090c35;
+	background-size: cover;
+
+	height: 100vh;
+}
+
+.content_header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	position: relative;
+	height: 65%;
+	padding: 0 10%;
+
+	font-size: 20px;
+	font-family: "OpenSans-Bold";
+	color: #ffffff;
+	letter-spacing: 3px;
+}
+
+.logo {
+	width: 130px;
+	fill: #ffffff;
+	position: relative;
+	height: 30%	
+}
+
+.header_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: stretch;
+	max-width: 100%;
+	height: 70%;	
+}
+
+.header_right_text {
+	align-self: flex-end;
+	margin-left: 15%;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.btn {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 4em;
+	margin: 5px 0;
+
+	align-items: center;
+	justify-content: center;
+
+	background-color: #5e42b0;
+	border-radius: 45px;
+	
+	font-size: 0.6em;
+	font-family: "OpenSans-Regular";
+	color: #ffffff;	
+}
+
+.apple_logo {
+	height: 25px;
+	fill: #ffffff;
+	margin-bottom: 5px;
+}	
+
+.google_logo {
+	height: 20px;
+	fill: #ffffff;	
+	margin-left: -7%;
+}
+
+.btn_text {
+	margin: 2%;
+}
+.btn_bold_text {
+	font-family: "OpenSans-Bold";
+	text-align: left;
+}
+
+p {
+	margin: 0 0;
+}
+
+@media (max-width: 640px){
 	.bkg_header {
 		background-image: url(../img/football_767.jpg);
-		background-repeat: no-repeat;
-		background-position: center 0;
-		background-color: #090c35;
-		background-size: cover;
+	}	
 
-		min-height: 100vh;
-
-  		font-size: 12px;
+	.header_text  {
+		font-size: 8vw;
 	}
 
-	.content_header {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		position: relative;
-
-		font-size: 2.5em;
-		font-family: "OpenSans-Bold";
-		color: #ffffff;
-	}
-
-	.logo {
-		width: 6em;
-		fill: #ffffff;
-		position: relative;
-		margin-top: 5%;	
-	}
-
-	.header_left_text {
-		align-self: flex-start;
-		margin-left: 5%;
+	.header_right_text {
+		margin-top: 5%;
 	}
 
 	.buttons {
-		background-color: #6a1db4;
-		border-radius: 45px;
-		margin: 10px 20px;
-		height: 2.5em;
-		position: relative;
-
-		font-size: 1em;
-		font-family: "OpenSans-Bold";
-		color: #ffffff;
-
-		text-align: center;
-		justify-content: flex-end;
+		flex-direction: column;
+		padding: 0 10%;
+		height: 20%;
 	}
+	
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+	.bkg_header {
+		background-image: url(../img/football_1280.jpg);
+	}
+
+	.logo {
+		width: 200px;
+	}
+
+	.header_text  {
+		font-size: 7vw;
+	}	
+
+	.btn {
+		width: 40%;
+		height: 6em;
+		margin: 20% 2%;
+		font-size: 0.8em;
+	}
+
+	.apple_logo {
+		height: 45px;
+		margin-right: 10px;
+	}
+
+	.google_logo {
+		height: 40px;
+		margin-right: 10px;
+	}
+}
+
+@media (min-width: 961px) {
+	.bkg_header {
+		background-image: url(../img/football_1920.jpg);
+	}
+
+	.header_text {
+		font-size: 4.5em;
+		margin-top: 15%;
+	}
+}
+	
+	
+
 
 	.main_athlets {
 		display: flex;
@@ -168,7 +276,7 @@ body {
 		width: 100%;
 
 		font-size: 12px;
-		margin: auto 5%;
+		
 	}
 
 	.active_title {
@@ -207,4 +315,3 @@ body {
 
 		min-height: 100vh;
 	}
-}
