@@ -69,6 +69,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;	
+	height: 35%;
 }
 
 .btn {
@@ -113,6 +114,92 @@ p {
 	margin: 0 0;
 }
 
+/* блоки со спортсменами */
+.sportsmen_block {
+	display: flex;
+	flex-direction: column;
+}
+
+.headline {
+	font-size: 3em;
+	font-family: "OpenSans-Bold";
+	color: #e9e9e9;
+	letter-spacing: 3px;
+	
+}
+
+.img_athlets {
+	align-self: flex-start;
+	position: absolute;
+}
+
+.img_players {
+	align-self: flex-start;
+	position: absolute;
+}
+
+.sportsmen_content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; 
+	padding: 5%;
+}
+
+.light_gray {
+	background-color: #fafafa;
+}
+
+.gray {
+	background-color: #f4f2f8;
+}
+
+.purple {
+	background-color: #513aa6;
+	color: #ffffff;
+}
+
+.darck_blue {
+	background-color: #0a0c2d;
+	color: #ffffff;
+}
+
+.sportsmen_title_number {
+	font-family: "OpenSans-Bold";
+	font-size: 1em;
+	color: #000000;
+
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #6a1db4;
+}
+
+.sportsmen_title {
+	display: flex;
+	align-items: flex-end;
+	font-size: 0.7em;
+	letter-spacing: 1px;
+}
+
+.sportsmen_description {
+	font-family: "OpenSans-Regular";
+	padding-top: 3%;
+	text-align: justify;
+	font-size: 0.8em;
+	
+}
+
+.sportsmen_description:nth-child(4n+4) {
+	color: #ffffff;
+}
+
+.sportsmen_title_text {
+	font-family: "OpenSans-Bold";
+	font-size: 2em;
+	color: #bfbfbf;
+}
+
+
+
 @media (max-width: 640px){
 	.bkg_header {
 		background-image: url(../img/football_767.jpg);
@@ -131,8 +218,29 @@ p {
 		padding: 0 10%;
 		height: 20%;
 	}
+
+	.headline {
+		margin: 0 5%;
+	}
 	
+	.sportsmen_content {
+		padding-top: 15%;
+		padding-bottom: 10%;
+	}
+
+	.img_athlets {
+		align-self: center;
+		position: relative;
+		margin-bottom: -15%;
+	}
+
+	.img_players {
+		align-self: center;
+		position: relative;
+		margin-bottom: -10%;
+	}
 }
+
 
 @media (min-width: 641px) and (max-width: 960px) {
 	.bkg_header {
@@ -149,21 +257,55 @@ p {
 
 	.btn {
 		width: 40%;
-		height: 6em;
-		margin: 20% 2%;
+		height: 7.5vw;
+		margin: 0 2%;
 		font-size: 0.8em;
 	}
 
 	.apple_logo {
-		height: 45px;
+		height: 40px;
 		margin-right: 10px;
 	}
 
 	.google_logo {
-		height: 40px;
+		height: 35px;
 		margin-right: 10px;
 	}
+
+	.img_athlets {
+		margin-left: -20%;
+		margin-top: 7%;
+	}
+
+	.img_players {
+		align-self: flex-end;
+		margin-top: 90%; /* переделать */
+	}
+
+	.headline {
+		font-size: 4em;
+		margin-top: 5%;
+	}
+
+	.sportsmen_title {
+		font-size: 1em;
+	}
+
+	.sportsmen_description {
+		font-size: 1em;
+	}
+
+	/* для выравнивания блоков */
+	.right {
+		padding-right: 40%;
+		padding-left: 5%;
+	}
+
+	.left {
+		padding-left: 40%;
+	}
 }
+
 
 @media (min-width: 961px) {
 	.bkg_header {
@@ -171,78 +313,19 @@ p {
 	}
 
 	.header_text {
-		font-size: 4.5em;
+		font-size: 4.5vw;
 		margin-top: 15%;
+	}
+
+	.btn {
+		width: 20%;
+		margin: 0 2%;
 	}
 }
 	
 	
-
-
-	.main_athlets {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.title_athlets {
-		font-size: 4em;
-		font-family: "OpenSans-Bold";
-		color: #e9e9e9;
-
-		margin-left: 5%;
-	}
-
-	.img_athlets {
-		align-self: center;
-		margin-bottom: -15%;
-	}
-
-	.connection {
-		background-color: #fafafa;
-	}
-
-	.headline{
-		display: flex;
-		align-items: flex-end;
-		padding-top: 15%;
-	}
-
-	.title_number {
-		font-family: "OpenSans-Bold";
-		font-size: 1em;
-		color: #000000;
-		margin-left: 5%;
-
-		text-decoration: underline;
-		text-decoration-style: solid;
-		text-decoration-color: #6a1db4;
-	}
-
-	.title {
-		font-family: "OpenSans-Bold";
-		font-size: 2em;
-		color: #bfbfbf;
-		margin-left: 1%;
-	}
-
-	.text {
-		font-family: "OpenSans-Regular";
-		margin: auto 5%;
-		padding-bottom: 10%;
-		padding-top: 3%;
-		text-align: justify;
-		color: #000000;
-	}
-
-	.collaboration {
-		background-color: #f4f2f8;
-	}
-
-	.growth {
-		background-color: #460099;
-	}
-
-	.active_container {
+/* блоки be active*/
+.active_container {
 		display: flex;
 		flex-direction: column;
 	}
@@ -315,3 +398,5 @@ p {
 
 		min-height: 100vh;
 	}
+
+	
