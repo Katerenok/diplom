@@ -409,6 +409,7 @@ p {
 
 	.active_img {
 		width: 50vw;
+		height: 50vh;
 	}
 
 	.active_content {
@@ -418,6 +419,17 @@ p {
 	.number_block {
 		align-self: center;
 		margin-left: 46.5vw;
+	}
+
+	.active_title {
+		font-size: 3em;
+		padding-top: 13vh;
+		margin-left: 10%;
+	}
+
+	.active_text {
+		margin-left: 10%;
+		padding-top: 8%;
 	}
 
 	.reverse {
