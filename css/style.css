@@ -125,7 +125,8 @@ p {
 	font-family: "OpenSans-Bold";
 	color: #e9e9e9;
 	letter-spacing: 3px;
-	margin-top: 5%;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .img_athlets {
@@ -142,7 +143,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start; 
-	padding: 5%;
+	padding: 40px;
 }
 
 .light_gray {
@@ -208,40 +209,44 @@ p {
 	width: 100vw;
 }
 
-	.number_block {
-		width: 80px;
-		height: 80px;
-		background-color: #460099;
+.number_block {
+	width: 4em;
+	height: 4em;
+	background-color: #460099;
 	
-		font-family: "OpenSans-Bold";
-		font-size: 1.2em;
-		color: #ffffff;
-		text-decoration: underline;
-		text-align: center;
-		position: absolute;
+	font-family: "OpenSans-Bold";
+	font-size: 1.2em;
+	color: #ffffff;
+	text-decoration: underline;
+	text-align: center;
+	position: absolute;
 
-		margin-top: -70px;
-		margin-left: 10%;
-	}
+	margin-top: -70px;
+	margin-left: 5%;
+}
 
-	.active_content {
-		background-color: #ffffff;
-		width: 100%;
+.active_content {
+	background-color: #ffffff;
+	width: 100%;
 
-		font-size: 12px;
-		
-	}
+	font-size: 12px;	
+}
 
-	
+.active_title {
+	font-family: "OpenSans-Bold";
+	color: #e9e9e9;
+	letter-spacing: 3px;
+	margin-top: 5%;
+	margin-left: 5%;
+}
 
-	.active_text {
-		font-family: "OpenSans-Regular";
-		font-size: 3.5vw;
-		color: #000000;
-		padding-top: 3%;
-		padding-bottom: 15%;
-		margin: auto 5%;
-	}
+.active_text {
+	font-family: "OpenSans-Regular";
+	font-size: 1.5em;
+	color: #000000;
+	padding-bottom: 15%;
+	margin: auto 5%;
+}
 
 @media (max-width: 640px){
 	.bkg_header {
@@ -267,8 +272,15 @@ p {
 	}
 	
 	.sportsmen_content {
-		padding-top: 15%;
-		padding-bottom: 10%;
+		padding: 15% 5% 10% 5%;
+	}
+
+	.active_title {
+		font-size: 2em;
+	}
+
+	.active_text {
+		padding-top: 3%;
 	}
 
 	.img_athlets {
@@ -326,7 +338,8 @@ p {
 	}
 
 	.headline {
-		font-size: 6.5vh;
+		font-size: 4em;
+		margin-top: 60px;
 	}
 
 	.sportsmen_title {
@@ -347,6 +360,15 @@ p {
 		padding-left: 40%;
 	}
 
+	.number_block {
+		width: 5.5em;
+		height: 5.5em;
+	}
+
+	.active_title {
+		font-size: 5.5em;
+	}
+
 	.active_text {
 		font-size: 2.5em;
 	}
@@ -364,23 +386,44 @@ p {
 	}
 
 	.btn {
-		width: 20%;
-		margin: 0 2%;
+		width: 170px;
+		margin: 0 10px;
 	}
 
 	.img_athlets {
-		max-width: 70vh;
+		max-width: 45vh;
+		margin-top: 20px;
+		margin-left: 20%;
 	}
 
 	.img_players {
 		align-self: flex-end;
-		margin-top: 70%; /* переделать */
-		max-width: 90vh;
+		margin-top: 45%; /* переделать  Как правильно сделать? */
+		max-width: 80vh;
 	}
 
 	.active_block {
+		display: flex;
 		flex-direction: row;
 	}
+
+	.active_img {
+		width: 50vw;
+	}
+
+	.active_content {
+		width: 50vw;
+	}
+
+	.number_block {
+		align-self: center;
+		margin-left: 46.5vw;
+	}
+
+	.reverse {
+		flex-direction: row-reverse;
+	}
+
 	/* для выравнивания блоков */
 	.right {
 		padding-right: 50%;
