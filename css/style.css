@@ -517,7 +517,8 @@ p {
 
 	.number_block {
 		align-self: center;
-		margin-left: 0;
+		margin-left: calc(50% - 2em);
+		margin-top: auto;
 	}
 
 	.active_title {
