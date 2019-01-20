@@ -2,11 +2,11 @@ body {
 	margin: 0;
 }
 
-.header {
+header {
 	position: relative;
 }
 
-.footer {
+footer {
 	position: relative;
 }
 
@@ -41,9 +41,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
 	position: relative;
-	height: 65%;
+	
 	padding: 0 10%;
 
 	font-size: 20px;
@@ -56,7 +55,7 @@ body {
 	width: 130px;
 	fill: #ffffff;
 	position: relative;
-	height: 30%	
+	margin-top: 5%;	
 }
 
 .header_text {
@@ -64,8 +63,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-self: stretch;
-	max-width: 100%;
-	height: 70%;	
+	max-width: 100%;	
 }
 
 .header_right_text {
@@ -177,10 +175,28 @@ p {
 	font-family: "OpenSans-Bold";
 	font-size: 1em;
 	color: #000000;
+	align-self: center;
+	margin-right: 5px;
+}
 
-	text-decoration: underline;
-	text-decoration-style: solid;
-	text-decoration-color: #6a1db4;
+.sportsmen_title_number::after {
+ 	content: '';
+  	display: block;
+  	position: absolute;
+  	width: 15px;
+  	height: 3px;
+  	border-radius: 3px;
+  	background-color: #6a1db4;
+}
+
+/* цвет подчеркивания в блоках 03*/
+.white_underline::after {
+	content: '';
+	background-color: #ffffff;
+}
+
+.purple_number {
+	color: #946fda;
 }
 
 .sportsmen_title {
@@ -216,28 +232,37 @@ p {
 
 .active_img {
 	width: 100vw;
+	font-size: 0;
 }
 
 .number_block {
-	width: 4em;
-	height: 4em;
+	padding: 1.5em;
 	background-color: #460099;
 	
 	font-family: "OpenSans-Bold";
 	font-size: 1.2em;
 	color: #ffffff;
-	text-decoration: underline;
 	text-align: center;
-	position: absolute;
 
 	margin-top: -70px;
 	margin-left: 5%;
 }
 
+.number_block::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
 .active_content {
 	background-color: #ffffff;
 	width: 100%;
-
+	align-self: center;
+	margin: 5% 0 10% 0;
 	font-size: 12px;	
 }
 
@@ -253,7 +278,7 @@ p {
 	font-family: "OpenSans-Regular";
 	font-size: 1.5em;
 	color: #000000;
-	padding-bottom: 15%;
+	
 	margin: auto 5%;
 }
 
@@ -325,7 +350,6 @@ p {
 .logo_footer {
 	display: flex;
 	justify-content: center;
-	margin: 10%;
 }
 
 @media (max-width: 640px){
@@ -335,6 +359,7 @@ p {
 
 	.header_text  {
 		font-size: 8vw;
+		margin-top: 30vh;
 	}
 
 	.header_right_text {
@@ -377,8 +402,12 @@ p {
 	}
 
 	.bkg_logo {
-		width: 25%;
+		width: 70px;
 		border-radius: 15px;
+	}
+
+	.number_block {
+		position: absolute;
 	}
 }
 
@@ -394,6 +423,7 @@ p {
 
 	.header_text  {
 		font-size: 7vw;
+		margin-top: 15vh;
 	}	
 
 	.btn {
@@ -419,8 +449,9 @@ p {
 	}
 
 	.img_players {
-		margin-left: calc(52% - 2em);
-		max-width: 70vh;
+		margin-left: 50%;
+		margin-top: 20px;
+		max-width: 70vw;
 	}
 
 	.headline {
@@ -447,8 +478,7 @@ p {
 	}
 
 	.number_block {
-		width: 5.5em;
-		height: 5.5em;
+		position: absolute;
 	}
 
 	.active_title {
@@ -482,7 +512,7 @@ p {
 
 	.header_text {
 		font-size: 4.5vw;
-		margin-top: 15%;
+		margin-top: 25vh;
 	}
 
 	.btn {
@@ -491,14 +521,14 @@ p {
 	}
 
 	.img_athlets {
-		max-width: 45vh;
+		max-width: 350px;
 		margin-top: 20px;
-		margin-left: 20%;
+		margin-left: calc(25% - 3.5em);
 	}
 
 	.img_players {
-		margin-left: calc(50% - 2em);
-		max-width: 70vh;
+		margin-left: calc(50% - 4em);
+		max-width: 600px;
 	}
 
 	.active_block {
@@ -513,17 +543,15 @@ p {
 
 	.active_content {
 		width: 50vw;
+		margin: 0;
 	}
 
 	.number_block {
-		align-self: center;
-		margin-left: calc(50% - 2em);
-		margin-top: auto;
+		margin: auto;
 	}
 
 	.active_title {
 		font-size: 3em;
-		padding-top: 13vh;
 		margin-left: 10%;
 	}
 
