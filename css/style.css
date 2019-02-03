@@ -10,6 +10,18 @@ footer {
 	position: relative;
 }
 
+h1 {
+	text-transform: uppercase;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+h3 {
+	text-transform: uppercase;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -81,7 +93,7 @@ footer {
 .btn {
 	display: flex;
 	position: relative;
-	width: 100%;
+	width: 85%;
 	height: 4em;
 	margin: 5px 0;
 
@@ -94,6 +106,7 @@ footer {
 	font-size: 0.6em;
 	font-family: "OpenSans-Regular";
 	color: #ffffff;	
+	padding: 5px 0;
 }
 
 .apple_logo {
@@ -110,6 +123,9 @@ footer {
 
 .btn_text {
 	margin: 2%;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;	
 }
 .btn_bold_text {
 	font-family: "OpenSans-Bold";
@@ -233,6 +249,7 @@ p {
 .active_img {
 	width: 100vw;
 	font-size: 0;
+	overflow: hidden;
 }
 
 .number_block {
@@ -280,6 +297,7 @@ p {
 	color: #000000;
 	
 	margin: auto 5%;
+	padding: 5% 0;
 }
 
 /* Footer */
@@ -330,6 +348,10 @@ p {
 	margin: 15px;
 }
 
+.text_footer {
+	text-transform: uppercase;
+}
+
 .title_footer {
 	font-size: 8vw;
 	margin-top: 20%;
@@ -355,8 +377,8 @@ p {
 	}	
 
 	.header_text  {
-		font-size: 8vw;
-		margin-top: 30vh;
+		font-size: 7vw;
+		margin-top: 25vh;
 	}
 
 	.header_right_text {
@@ -380,10 +402,6 @@ p {
 
 	.active_title {
 		font-size: 2em;
-	}
-
-	.active_text {
-		padding-top: 3%;
 	}
 
 	.img_athlets {
@@ -420,11 +438,11 @@ p {
 
 	.header_text  {
 		font-size: 7vw;
+		margin: 15% 0 20% 0;
 	}	
 
 	.btn {
 		width: 40%;
-		height: 7.5vw;
 		margin: 0 2%;
 		font-size: 0.8em;
 	}
@@ -508,9 +526,12 @@ p {
 	}
 
 	.btn {
-		width: 20vw;
-		height: 7vh;
+		width: 19vw;
 		margin: 0 10px;
+	}
+
+	.btn:hover {
+		background-color: #3f1c87;	
 	}
 
 	.apple_logo {
@@ -569,7 +590,6 @@ p {
 
 	.active_text {
 		margin-left: 10%;
-		padding-top: 8%;
 	}
 
 	.reverse {
