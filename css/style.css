@@ -102,7 +102,8 @@ h3 {
 
 	background-color: #5e42b0;
 	border-radius: 45px;
-	
+	text-decoration: none;
+
 	font-size: 0.6em;
 	font-family: "OpenSans-Regular";
 	color: #ffffff;	
@@ -124,7 +125,6 @@ h3 {
 .btn_text {
 	margin: 2%;
 	text-transform: uppercase;
-	text-decoration: none;
 	color: #ffffff;	
 }
 .btn_bold_text {
@@ -526,8 +526,9 @@ p {
 	}
 
 	.btn {
-		width: 19vw;
 		margin: 0 10px;
+		padding: 5px 54px;
+		width: auto;
 	}
 
 	.btn:hover {
@@ -544,6 +545,7 @@ p {
 
 	.btn_text {
 		font-size: 1vw;
+		width: 125px;
 	}
 
 	.img_athlets {
@@ -565,6 +567,9 @@ p {
 
 	.active_img {
 		width: 50vw;
+		height: 38vw;
+		min-width: 481px;
+		min-height: 366px;
 	}
 
 	.active_content {
@@ -574,13 +579,15 @@ p {
 
 	.number_block {
 		position: absolute;
-		margin: 0 calc(50% - 2em);
+		top: calc(60% - 0.5em);
+		left: calc(45% - 2em);
+		/*margin: 0 calc(50% - 2em);*/
 		align-self: center;
 	}
 
-	.even_mrgn {
+	/*.even_mrgn {
 		margin: 0 calc(-50% + 2em);
-	}
+	}*/
 
 	.active_title {
 		font-size: 4.5em;
