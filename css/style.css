@@ -544,8 +544,8 @@ p {
 	}
 
 	.btn_text {
-		font-size: 1vw;
-		width: 125px;
+		font-size: 1.1em;
+		min-width: 120px;
 	}
 
 	.img_athlets {
@@ -620,6 +620,7 @@ p {
 
 	.bkg_logo {
 		width: 10%;
+		height: 10%;
 		margin-top: 10%;
 		border-radius: 20px;
 	}
